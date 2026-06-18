@@ -70,10 +70,13 @@ box-shadow:0 4px 10px rgba(0,0,0,.3)
 <h2>Contact Serene Reach</h2><br>
 <div class="card">
 <form class="contact-form" action="https://formspree.io/f/mlgkynby" method="POST">
-<input placeholder="Your Name">
-<input placeholder="Business Name">
-<input placeholder="Phone Number">
-<textarea rows="5" placeholder="Tell us about your business"></textarea>
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="text" name="business" placeholder="Business Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<textarea name="message" placeholder="Tell us about your business"></textarea>
 <button type="submit">Submit Inquiry</button>
 </form>
 <br>
